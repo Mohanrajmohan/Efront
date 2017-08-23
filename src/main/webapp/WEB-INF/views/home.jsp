@@ -19,15 +19,29 @@
 <c:when test="${isUserClickedProduct == 'true' }">
 <%@ include file="Product.jsp" %>
 </c:when>
+<c:when test="${isUserClickedViewProduct == 'true' }">
+<%@ include file="viewProduct.jsp" %>
+</c:when>
 <c:when test="${isUserClickedCategory == 'true' }">
 <%@ include file="Category.jsp" %>
 </c:when>
-<c:when test="${isUserClickedsupplier == 'true' }">
+<c:when test="${isUserClickedViewCategory == 'true' }">
+<%@ include file="viewCategory.jsp" %>
+</c:when>
+<c:when test="${isUserClickedsupplier== 'true' }">
 <%@ include file="supplier.jsp" %>
 </c:when>
+<c:when test="${isUserClickedViewSupplier == 'true' }">
+<%@ include file="viewsuppiler.jsp" %>
+</c:when>
+
 <c:when test="${isUserClickedUser == 'true' }">
 <%@ include file="User.jsp" %>
 </c:when>
+<c:when test="${isUserClickedViewUser == 'true' }">
+<%@ include file="viewUser.jsp" %>
+</c:when>
+
 
 </c:choose>
 

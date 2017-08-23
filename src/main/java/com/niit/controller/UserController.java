@@ -25,6 +25,13 @@ public class UserController {
 
 		return mv;
 	}
+	@RequestMapping("user")
+	public ModelAndView User() {
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("isUserClickedUser", "true");
+		return mv;
+	}
+	
 	@RequestMapping("viewuser")
 	public String viewuser(Model model) {
 		List<User> userList = userDAO.list();

@@ -19,7 +19,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="supplier_name_fr">SUPPLIER NAME</label>
   <div class="col-md-4">
-    <input type="text" id="supplier_name_fr" name="supplierName" class="form-control">
+    <input type="text" id="supplier_name_fr" name="supplierName" class="form-control"value="${supplier.supplierName}">
     
   </div>
 </div> 
@@ -28,7 +28,7 @@
 <div class="form-group">
   <label class="col-md-4 control-label" for="supplier_name_fr">CONTACT NUMBER</label>
   <div class="col-md-4">
-    <input type="text" id="supplier_name_fr" name="contactNumber" class="form-control">
+    <input type="text" id="supplier_name_fr" name="contactNumber" class="form-control"value="${supplier.contactNumber}">
     
   </div>
 </div>

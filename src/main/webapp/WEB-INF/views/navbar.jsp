@@ -1,51 +1,62 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
+  </head>
 <body>
-
- 
- 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" href="#">bags cart</a>
+      <a class="navbar-brand" href="#">Bags Carts </a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Shop by brand <span class="caret"></span></a>
+      <li class="active"><a href="home">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">category type<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Sky bags</a></li>
-          <li><a href="#">American tourist</a></li>
-          <li><a href="#">Wild craft</a></li>
-          <li><a href="#">Tomy helfiger</a></li>
+          <li><a href="renault">Renault</a></li>
+          <li><a href="#">MaruthiSuzuki</a></li>
+          <li><a href="#">Tata</a></li>
         </ul>
       </li>
-      <ul class="nav navbar-nav">
-     
-      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Product <span class="caret"></span></a>
+      <li><a href="renault">about us</a></li>
+       <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">category<span class="caret"></span></a>
         <ul class="dropdown-menu">
-          <li><a href="#">Add</a></li>
-          <li><a href="#">View</a></li>
-      
+          <li><a href="category">ADD</a></li>
+          <li><a href="viewcategory">VIEW</a></li>
         </ul>
       </li>
-      <li><a href="Category">Category</a></li>
-      <li><a href="supplier">supplier</a></li>
-       <li><a href="User">User</a></li>
+     </ul>
+     <ul class="nav navbar-nav navbar-right">
+     <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">USER<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="user">ADD</a></li>
+          <li><a href="viewuser">VIEW</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">PRODUCT<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="product">ADD</a></li>
+          <li><a href="viewproduct">VIEW</a></li>
+        </ul>
+      </li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SUPPLIER<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="supplier">ADD</a></li>
+          <li><a href="viewsupplier">VIEW</a></li>
+        </ul>
+      </li>
+      <li><a href="register"><span class="glyphicon glyphicon-user"></span>Register</a></li>
+      <li><a href="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
     </ul>
+    <form class="navbar-form navbar-left">
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search">
+      </div>
+      <button type="submit" class="btn btn-default">Search</button>
+    </form>
   </div>
-</nav>
-  
-
+</nav> 
 </body>
-</html>

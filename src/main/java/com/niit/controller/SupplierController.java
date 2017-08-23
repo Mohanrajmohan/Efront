@@ -7,6 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.niit.Dao.SupplierDAO;
@@ -25,6 +26,13 @@ public class SupplierController {
 
 		return mv;
 	}
+	@RequestMapping("supplier")
+	public ModelAndView supplier() {
+
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("isUserClickedsupplier", "true");
+		return mv;
+	}
 	@RequestMapping("viewsupplier")
 	public String viewsupplier(Model model) {
 		List<Supplier> supplierList = supplierDAO.list();
@@ -32,4 +40,9 @@ public class SupplierController {
 		model.addAttribute("isUserClickedViewSupplier", true);
 			return "home";
 		}
+	@RequestMapping("deletesupplier")
+	public String deletesupplier(@RequestParam("supplierId") int supplierId, Model model) {
+		supplierDAO.delete(supplierId);
+		return "redirect:viewsupplier";
+	}
 }

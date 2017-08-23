@@ -29,20 +29,22 @@ public class homecontroller {
 
 		return "home";
 	}
-	@RequestMapping("product")
-	public ModelAndView Product() {
-
-		ModelAndView mv = new ModelAndView("home");
-		mv.addObject("isUserClickedProduct", "true");
-		return mv;
-}
-	@RequestMapping("supplier")
+	
+	/*@RequestMapping("supplier")
 	public ModelAndView supplier() {
 
 		ModelAndView mv = new ModelAndView("home");
 		mv.addObject("isUserClickedsupplier", "true");
 		return mv;
 	}
+	@RequestMapping("viewsupplier")
+	public ModelAndView viewsupplier() {
+
+		ModelAndView mv = new ModelAndView("home");
+		mv.addObject("isUserClickedviewsupplier", "true");
+		mv.addObject("supplierList", "");
+		return mv;
+	}*/
 	@RequestMapping("Category")
 	public ModelAndView Category() {
 
